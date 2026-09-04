@@ -1,11 +1,11 @@
 // Typewriter effect — rotating "how I can help" phrases
 const typewriterEl = document.getElementById('typewriter');
 const typewriterPhrases = [
-  'Technical SEO Audits',
-  'Organic Traffic Growth',
-  'Content & Keyword Strategy',
-  'Link Building & Authority',
-  'Local & International SEO'
+  'Technical SEO Audits ⚙️',
+  'Fresh Organic Traffic ☕',
+  'Content & Keyword Strategy ✍️',
+  'Link Building & Authority 🔗',
+  'Cozy Local & International SEO 🌍'
 ];
 
 if (typewriterEl) {
