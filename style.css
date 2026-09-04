@@ -56,7 +56,6 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; 
   border: 2px dashed var(--primary);
   border-radius: 999px;
   box-shadow: 3px 3px 0 rgba(74, 46, 35, 0.1);
-  transform: rotate(-2deg);
 }
 
 .center { text-align: center; display: block; }
@@ -465,14 +464,24 @@ section { padding: 96px 0; }
 .media-note { text-align: center; color: var(--text-muted); font-size: 0.8rem; font-style: italic; }
 
 /* CERTIFICATIONS */
-.cert-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
+.cert-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .cert-badge {
   background: var(--bg-alt);
   border: 2px solid var(--border);
-  padding: 10px 18px;
-  border-radius: 999px;
+  padding: 12px 18px;
+  border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 700;
+  text-align: left;
+  box-shadow: 3px 3px 0 rgba(74, 46, 35, 0.08);
 }
 
 /* FAQ */
