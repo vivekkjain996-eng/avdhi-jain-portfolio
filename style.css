@@ -539,6 +539,8 @@ section { padding: 96px 0; }
 .metric span { font-size: 0.78rem; color: var(--text-muted); font-weight: 700; }
 .result-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--card);
   border: 2.5px solid var(--border);
   border-radius: var(--radius);
@@ -546,6 +548,39 @@ section { padding: 96px 0; }
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: visible;
+}
+.result-card .breakdown { margin-top: auto; }
+
+/* Proof screenshots — real dashboard/report images, framed like a taped-in photo */
+.proof-shots {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.proof-shots-center { justify-content: center; }
+.proof-shot {
+  flex: 1 1 160px;
+  background: var(--bg-alt);
+  border: 2px solid var(--text);
+  border-radius: 12px;
+  padding: 8px 8px 10px;
+  box-shadow: 4px 4px 0 rgba(74, 46, 35, 0.15);
+}
+.proof-shot:nth-child(odd) { transform: rotate(-1.2deg); }
+.proof-shot:nth-child(even) { transform: rotate(1.2deg); }
+.proof-shot img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  display: block;
+}
+.proof-shot figcaption {
+  margin-top: 8px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-align: center;
 }
 .ribbon {
   position: absolute;
