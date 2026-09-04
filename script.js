@@ -5,7 +5,7 @@ const typewriterPhrases = [
   'Fresh Organic Traffic ☕',
   'Content & Keyword Strategy ✍️',
   'Link Building & Authority 🔗',
-  'Cozy Local & International SEO 🌍'
+  'AI Search Visibility (GEO) 🤖'
 ];
 
 if (typewriterEl) {
